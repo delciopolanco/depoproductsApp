@@ -3,6 +3,7 @@ import { TestHarness } from '@components';
 import { FC, ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
+import empty from '@images/empty.png';
 
 export interface EmptyPlaceHolderProps {
 	path?: string;
@@ -40,7 +41,7 @@ export const EmptyPlaceHolder: FC<EmptyPlaceHolderProps> = ({
 			<Box
 				alt={'noResult'}
 				component={'img'}
-				src={`/public/empty.png`}
+				src={empty}
 				sx={{ height: placeHolderheight, mb: 2 }}
 			/>
 			<TestHarness value={'no-result-title'}>
